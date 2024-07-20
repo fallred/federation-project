@@ -1,0 +1,22 @@
+{
+  "name": "mirco-app-comp",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "base",
+    "sub-app1",
+    "sub-app2"
+  ],
+  "license": "MulanPSL-2.0",
+  "scripts": {
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "serve": "pnpm --parallel --filter \"./**\" serve",
+    "stop": "kill-port --port 5000,5001"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.3",
+    "http-server": "^13.0.1",
+    "kill-port": "^2.0.1"
+  }
+}
+

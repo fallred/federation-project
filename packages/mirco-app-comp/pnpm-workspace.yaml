@@ -1,0 +1,4 @@
+packages:
+  - "base"
+  - "sub-app1"
+  - "sub-app2"
