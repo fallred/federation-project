@@ -5,7 +5,7 @@ const RemoteCounter = safeRemoteComponentWithMfConfig<
   React.FC<{ init?: number }>
 >({
   mfConfig: {
-    entry: 'http://localhost:9000/remote.js',
+    entry: 'http://localhost:5000/remote.js',
     moduleName: 'Counter',
     remoteName: 'remoteCounter',
   },
