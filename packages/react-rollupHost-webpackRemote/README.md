@@ -1,0 +1,1 @@
+ pnpm add html-webpack-plugin --filter remote

@@ -9,3 +9,4 @@ const style = {
 const Button = () => <button id='button' style={style}>Webpack Remote Button</button>;
 
 export default Button;
+
