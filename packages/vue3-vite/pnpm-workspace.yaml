@@ -1,0 +1,5 @@
+packages:
+  - 'common-lib'
+  - 'home'
+  - 'layout'
+  - 'css-modules'
