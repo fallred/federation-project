@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
 import { computed } from '@vue/reactivity'
-import { createNamespace } from '@zi-shui/utils/create'
+import { createNamespace } from '@z-ui/utils/create'
 import { onMounted, watch, ref } from 'vue'
 import { checkboxEmits, checkboxProps } from './checkbox'
 const bem = createNamespace('checkbox')

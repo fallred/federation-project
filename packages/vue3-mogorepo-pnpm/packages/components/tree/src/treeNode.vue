@@ -40,13 +40,13 @@
 
 <script lang="ts" setup>
 import Switcher from './icon/Switcher'
-import ZIcon from '@zi-shui/components/icon'
-import { createNamespace } from '@zi-shui/utils/create'
+import ZIcon from '@z-ui/components/icon'
+import { createNamespace } from '@z-ui/utils/create'
 import { treeNodeEmitts, treeNodeProps } from './tree'
 import Loading from './icon/Loading'
 import { computed } from 'vue'
 import ZTreeNodeContent from './tree-node-content'
-import ZCheckbox from '@zi-shui/components/checkbox'
+import ZCheckbox from '@z-ui/components/checkbox'
 const bem = createNamespace('tree-node')
 const props = defineProps(treeNodeProps)
 

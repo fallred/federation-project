@@ -1,7 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 
-import ZIcon from '@zi-shui/components/icon'
-import '@zi-shui/theme-chalk/src/index.scss'
+import ZIcon from '@z-ui/components/icon'
+import '@z-ui/theme-chalk/src/index.scss'
 
 console.log(ZIcon)
 export default {

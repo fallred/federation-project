@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
-import { createNamespace } from '@zi-shui/utils/create'
+import { createNamespace } from '@z-ui/utils/create'
 import { onMounted, provide, ref, useSlots, watch } from 'vue'
 import {
   Key,
@@ -36,7 +36,7 @@ import {
   treeProps
 } from './tree'
 import ZTreeNode from './treeNode.vue'
-import ZVirtualList from '@zi-shui/components/virtual-list'
+import ZVirtualList from '@z-ui/components/virtual-list'
 const bem = createNamespace('tree')
 
 defineOptions({

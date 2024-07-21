@@ -3,6 +3,9 @@
   "private": true,
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "pnpm -C play dev",
     "doc:dev": "pnpm -C docs dev"
@@ -11,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zi-shui/components": "workspace:*",
-    "@zi-shui/theme-chalk": "workspace:*",
-    "@zi-shui/utils": "workspace:*",
+    "@z-ui/components": "workspace:*",
+    "@z-ui/theme-chalk": "workspace:*",
+    "@z-ui/utils": "workspace:*",
     "typescript": "^4.7.4",
     "vue": "^3.2.37"
   },

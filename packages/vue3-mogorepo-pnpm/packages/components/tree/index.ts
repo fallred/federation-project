@@ -1,4 +1,4 @@
-import { withInstall } from '@zi-shui/utils/with-install'
+import { withInstall } from '@z-ui/utils/with-install'
 import _Tree from './src/tree.vue'
 
 const Tree = withInstall(_Tree)

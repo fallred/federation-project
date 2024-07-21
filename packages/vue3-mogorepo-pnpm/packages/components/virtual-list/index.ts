@@ -1,4 +1,4 @@
-import { withInstall } from '@zi-shui/utils/with-install'
+import { withInstall } from '@z-ui/utils/with-install'
 import _Virtual from './src/virtual'
 
 const Tree = withInstall(_Virtual)

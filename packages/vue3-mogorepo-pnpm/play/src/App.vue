@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { AddCircle } from '@vicons/ionicons5'
-import { Key, TreeOption } from '@zi-shui/components/tree/src/tree'
+import { Key, TreeOption } from '@z-ui/components/tree/src/tree'
 import { ref } from 'vue'
 
 function createData(level = 4, parentKey = ''): any {
@@ -101,6 +101,27 @@ const check = ref(true)
 const handleChange = (val: boolean) => {
   console.log(val)
 }
+
+
+const generateTransferData = () => {
+  const data = [];
+  for (let i = 1; i <= 15; i++) {
+    data.push({
+      key: i,
+      label: `备选项 ${i}`,
+      disabled: i % 4 === 0
+    });
+  }
+  return ref(data);
+};
+const transferData = generateTransferData();
+const rightValue = ref([1, 4]);
+const transferProp = {
+  key:'key',
+  label:'label',
+  disabled:'disabled'
+};
+
 </script>
 
 <template>
@@ -124,4 +145,6 @@ const handleChange = (val: boolean) => {
     <template #default="{ node }"> {{ node.key }} - {{ node.label }} </template>
   </z-tree>
   <!-- selectable 意味着可以选择节点  multiple 意味着可以多选节点  selected-keys 选中后的节点-->
+
+  <z-transfer v-model="rightValue" :data="transferData" :props="transferProp"> </z-transfer>
 </template>

@@ -1,4 +1,4 @@
-import { createNamespace } from '@zi-shui/utils/create'
+import { createNamespace } from '@z-ui/utils/create'
 import { computed, defineComponent, onMounted, reactive, ref, watch } from 'vue'
 
 export default defineComponent({
