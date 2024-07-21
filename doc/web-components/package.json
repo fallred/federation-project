@@ -1,0 +1,14 @@
+{
+  "name": "web-components",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "child-app",
+    "main-app"
+  ],
+  "scripts": {
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "dev": "pnpm --parallel --filter \"./**\" dev"
+  },
+  "license": "MulanPSL-2.0"
+}

@@ -1,0 +1,3 @@
+packages:
+  - 'child-app'
+  - 'main-app'

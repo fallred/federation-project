@@ -1,0 +1,17 @@
+{
+    "name": "main-app",
+    "version": "1.0.0",
+    "main": "src/main.ts",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build"
+    },
+    "dependencies": {
+      "vue": "^3.0.0"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-vue": "^1.2.3",
+      "vite": "^2.4.4"
+    }
+  }
+  
