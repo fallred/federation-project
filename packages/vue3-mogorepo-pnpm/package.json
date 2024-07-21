@@ -1,33 +1,47 @@
 {
-  "version": "1.0.0",
+  "name": "root",
   "private": true,
-  "description": "",
-  "main": "index.js",
   "workspaces": [
     "packages/*"
   ],
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@vue/compiler-sfc": "^3.0.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.3",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-rename": "^2.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "lerna": "^4.0.0",
+    "rollup": "^2.42.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^16.1.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "typescript": "^4.2.3",
+    "vue": "^3.0.7"
+  },
   "scripts": {
     "dev": "pnpm -C play dev",
-    "doc:dev": "pnpm -C docs dev"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@z-ui/components": "workspace:*",
-    "@z-ui/theme-chalk": "workspace:*",
-    "@z-ui/utils": "workspace:*",
-    "typescript": "^4.7.4",
-    "vue": "^3.2.37"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "@vitejs/plugin-vue-jsx": "^1.0.0",
-    "@vue/eslint-config-typescript": "^11.0.0",
-    "eslint": "^8.19.0",
-    "eslint-plugin-vue": "^9.2.0",
-    "sass": "^1.53.0",
-    "unplugin-vue-define-options": "^0.6.2"
+    "build:theme": " gulp build --gulpfile packages/theme-chalk/gulpfile.js",
+    "build": "webpack --config builds/webpack.config.js",
+    "build:esm-bundle": "rollup -c ./builds/rollup.config.bundle.js",
+    "build:esm": "rollup -c ./builds/rollup.config.js"
   }
 }

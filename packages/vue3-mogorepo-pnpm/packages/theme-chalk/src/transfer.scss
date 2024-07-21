@@ -1,4 +1,6 @@
-@use 'mixins/mixins.scss' as *;
+@import "./common/var.scss";
+@import "./mixins//mixin.scss";
+
 
 @include b(transfer){
     @include e(panel){
